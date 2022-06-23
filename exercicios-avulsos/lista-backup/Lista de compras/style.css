@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+header {
+  text-align: center;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/ce/eb/3d/ceeb3d02ced53a1a052302e37784b8a1.jpg);
+  font-family: "Roboto", sans-serif;
+}
+
+.lista {
+  background: #ecf4ff;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  color: #1c1c1c;
+  padding: 32px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.logos {
+  max-height: 32px;
+  max-width: 32px;
+}
+
+#github {
+  position: relative;
+}
+#github:hover {
+  top: -2px;
+  box-shadow: 0 2px 2px #666;
+  border-radius: 100px;
+}
+
+#linkedin {
+  position: relative;
+}
+#linkedin:hover {
+  top: -2px;
+  box-shadow: 0 2px 2px #666;
+  border-radius: 100px;
+}
+
+#instagram {
+  position: relative;
+}
+#instagram:hover {
+  top: -2px;
+  box-shadow: 0 2px 2px #666;
+  border-radius: 100px;
+}
+
+#twitter {
+  position: relative;
+}
+#twitter:hover {
+  top: -2px;
+  box-shadow: 0 2px 2px #666;
+  border-radius: 100px;
+}

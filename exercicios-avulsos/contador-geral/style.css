@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom, #21063b, #6E0061);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-attachment: fixed;
+}
+
+main {
+    text-align: center;
+    margin-top: 200px;
+    color:#A15098;
+}
+
+#definirMeta {
+    font-size: 15pt;
+}
+
+#numero {
+    font-size: 50pt;
+    margin-top: -30pt;
+}
+
+input {
+    border-radius: 15pt;
+    background-color: #6E0061;
+    color: #A15098;
+    border-width: 0pt;
+}
+

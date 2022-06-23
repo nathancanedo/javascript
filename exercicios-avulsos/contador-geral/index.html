@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Geral</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1>CONTADOR</h1>
+        <div id="numero">
+            <input type="number" name="meta" id="meta"><input type="button" name="definir" value="Definir" onclick="meta()">
+            <p id="definirMeta">Defina uma meta</p>
+        </div>
+            <input id="add1" onclick="add1()" type="button" value="+1" disabled="true">
+            <input id="zerar"type="button" value="Zerar" onclick="zerar()" disabled="true">
+        <div id="btnMeta"></div>
+        <p id="txtMeta"></p>
+    </main>
+    <script src="script.js"></script>
+</body> 
+</html>
