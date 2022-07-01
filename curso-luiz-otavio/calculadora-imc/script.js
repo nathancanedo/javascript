@@ -5,7 +5,7 @@ const altura = document.querySelector('#altura');
 let resultado = document.querySelector('#resultado');
 
 function calcular() {
-    const imc = (peso.value / (altura.value * altura.value)).toFixed('1');
+    const imc = (peso.value / (altura.value ** 2)).toFixed(1);
     resultado.innerHTML = `Olá ${nome.value}! Seu IMC é ${imc}`;
 
     if (idade.value < 60) {
