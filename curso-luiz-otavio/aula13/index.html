@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Aula 13</title>
+</head>
+<body>
+    <div id="texto">
+        
+    </div>
+    <script>
+        const nome = prompt('Digite seu nome completo');
+        const texto = document.body;
+        const nomeSemEspacos = nome.replace(/ /g, "");
+
+        texto.innerHTML += `Seu nome é <strong>${nome}</strong>.<br>`;
+        texto.innerHTML += `Seu nome tem <strong>${nomeSemEspacos.length} letras</strong>.<br>`;
+        texto.innerHTML += `A segunda letra do seu nome é <strong>${nomeSemEspacos[1]}</strong><br>`;
+        
+        if (nome.indexOf ('a') == -1) {
+            texto.innerHTML += `Qual é o primeiro índice da letra A no seu nome? <strong>Seu nome não tem letra A!</strong><br>`;
+            texto.innerHTML += `Qual é o último índice da letra A no seu nome? <strong>Seu nome não tem letra A!</strong> <br>`;
+        } else {
+            texto.innerHTML += `Qual é o primeiro índice da letra A no seu nome? <strong>${nome.indexOf('a')}</strong><br>`;
+            texto.innerHTML += `Qual é o último índice da letra A no seu nome? <strong>${nome.lastIndexOf('a')}</strong> <br>`;
+        }
+        
+        texto.innerHTML += `As últimas 3 letras do seu nome são? <strong>${nomeSemEspacos.slice(-3)}</strong><br>`
+        texto.innerHTML += `As palavras do seu nome são: <strong>${nome.split(' ')}</strong><br>`;
+        texto.innerHTML += `Seu nome com as letras maiúsculas: <strong>${nome.toUpperCase()}</strong><br>`
+        texto.innerHTML += `Seu nome com as letras minúsculas: <strong>${nome.toLowerCase()}</strong><br>`
+    </script>
+</body>
+</html>
