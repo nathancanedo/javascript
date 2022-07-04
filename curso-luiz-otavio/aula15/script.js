@@ -5,9 +5,15 @@ let numero;
 
 
 function calcular() {
-    document.querySelector('#resultado').removeAttribute('hidden')
-
     numero = Number(document.querySelector('#inputNumero').value);
+    const resultado = document.querySelector('#resultado');
+
+    if (numero == 0) {
+        resultado.toggleAttribute('hidden');
+    } else {
+
+    resultado.removeAttribute('hidden');
+
     elementoNumero.innerHTML = ' ' + numero;
 
     // Raiz Quadrada
@@ -49,4 +55,6 @@ function calcular() {
     const elementoDecimal = document.querySelector('#decimais');
     const duasCasasDecimais = numero.toFixed(2);
     elementoDecimal.innerHTML = ' ' + duasCasasDecimais;
+
+    }
 }
