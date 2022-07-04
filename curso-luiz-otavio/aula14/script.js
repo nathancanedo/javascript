@@ -1,3 +1,3 @@
-const  numero = 27.3453464567564756786585656756756;
+const numero = Math.round((Math.random() * (10 - 5) + 5));
 
-console.log(numero.toFixed(1));
+console.log(numero);

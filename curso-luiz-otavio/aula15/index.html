@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Numbers</title>
+</head>
+<body>
+    <main>
+        <h1>Digite um número</h1>
+        <input type="text" name="numero" id="inputNumero" onkeyup="calcular()">
+        <span id="resultado" hidden>
+            <h1>Seu número é <span id="numero"></span></h1>
+            <p>Raiz Quadrada: <span id="raiz"></span></p>
+            <p>55 é inteiro? <span id="inteiro"></span></p>
+            <p>É um NaN?<span id="nan"></span></p>
+            <p>Arredondando para cima:<span id="cima"></span></p>
+            <p>Arredondando para baixo:<span id="baixo"></span></p>
+            <p>Com duas casas decimais:<span id="decimais"></span></p>
+        </span>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
