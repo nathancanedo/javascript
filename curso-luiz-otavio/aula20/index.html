@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+
+    body {
+        height: 100vh;
+        background-image: linear-gradient(blue, rgb(0, 0, 112));
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+
+    main {
+        max-width: 600px;
+        text-align: center;
+        background-color: white;
+        padding: 50px;
+
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        line-height: 2.5em;
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form class="form" action="" method="get">
+            <p>Nome: <input type="text" class="nome"></p>
+            <p>Sobrenome: <input type="text" class="sobrenome"></p>
+            <p>Peso: <input type="text" class="peso"></p>
+            <p>Altura: <input type="text" class="altura"></p>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="resultado">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
