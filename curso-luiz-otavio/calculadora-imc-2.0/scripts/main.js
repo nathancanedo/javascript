@@ -26,5 +26,4 @@ function pegarDados() {
             resultado.innerHTML = `Seu IMC é ${imc} (Obesidade grau 3)`;
         }
     }
-
 }
