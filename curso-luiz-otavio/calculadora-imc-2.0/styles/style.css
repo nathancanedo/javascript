@@ -28,10 +28,34 @@ body {
 .container {
     max-width: 640px;
     margin: 50px auto;
-    background-color: var(--cor5);
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+table caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: var(--cor5);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #025159;
 }
 
 form input, form label, form button {
