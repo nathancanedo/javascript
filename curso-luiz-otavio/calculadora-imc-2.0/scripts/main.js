@@ -11,7 +11,7 @@ function calcular(peso, altura) {
     resultado(imc);
 }
 
-function resultado(imc){
+function resultado(imc) {
     const resultado = document.querySelector('#resultado');
     if (imc < 18.5) {
         resultado.innerHTML = `Seu IMC é ${imc} (Abaixo do peso)`;
