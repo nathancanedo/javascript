@@ -17,5 +17,3 @@ const callbackDolar = function(erro, res, body){
 }
 
 request(option, callbackDolar);
-
-
