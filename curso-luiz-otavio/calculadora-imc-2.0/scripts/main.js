@@ -2,7 +2,6 @@ function pegarDados() {
     const form = document.querySelector('#form');
     form.addEventListener('submit', event => {event.preventDefault();});
 
-
     const peso = Number(document.querySelector('#peso').value);
     const altura = Number(document.querySelector('#altura').value);
     
