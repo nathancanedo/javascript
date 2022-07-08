@@ -5,15 +5,15 @@ function pegarDados() {
     const peso = Number(document.querySelector('#peso').value);
     const altura = Number(document.querySelector('#altura').value);
     
-    calcular(peso, altura);
+    const imc = calcular(peso, altura);
+    resultado();
 
     function calcular(peso, altura) {
-        const imc = (peso / (altura ** 2)).toFixed(2);
-        
-        resultado(imc);
+        const imc = (peso / (altura ** 2)).toFixed(2);          
+        return imc;
     }
     
-    function resultado(imc) {
+    function resultado() {
         const resultado = document.querySelector('#resultado');
 
         if ((peso <= 0 && altura <= 0) || (isNaN(peso) && isNaN(altura)) || (isNaN(peso) && altura <= 0) || (peso <=0 && isNaN(altura))) {
