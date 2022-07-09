@@ -3,8 +3,7 @@ function iniciarScript() {
 
     function exibirData() {
         const horario = document.querySelector('h1');
-        horario.innerHTML = dataAtual();
-        
+        horario.innerHTML = dataAtual();  
     }
 
     function dataAtual() {
