@@ -4,6 +4,7 @@ function iniciarScript() {
     function exibirData() {
         const horario = document.querySelector('h1');
         horario.innerHTML = dataAtual();
+        
     }
 
     function dataAtual() {
@@ -15,7 +16,11 @@ function iniciarScript() {
         const hora = data.getHours();
         const minutos = data.getMinutes();
 
-        return `${diaDaSemana}, ${dia} de ${mes} de ${ano}<br>${zeroAEsquerda(hora)}:${zeroAEsquerda(minutos)}`;
+        function zeroAEsquerda(num) {
+            return num >= 10 ? num : `0${num}`;
+        }
+        
+        return `${diaDaSemana}, ${dia} de ${mes} de ${ano}<br>${zeroAEsquerda(hora)}:${zeroAEsquerda(minutos)}`;    
 
         function nomeDiaDaSemana(numeroDaSemana) {
             switch (numeroDaSemana) {
@@ -65,10 +70,6 @@ function iniciarScript() {
                 case 11:
                     return 'Dezembro';        
             }
-        }
-
-        function zeroAEsquerda(num){
-            return num >= 10 ? num : `0${num}`
         }
     }
 }
