@@ -1,8 +1,8 @@
 let [a, b, c] = ['A', 'B' , 'C'];
 
-const nomes = ['Luiz', 'Henrique', 'Xavier', 'Navarro'];
+const nomes = ['Luiz', 'Henrique', 'Xavier', 'Navarro', Charles];
 
-const [nome1, nome2, nome3, nome4] = nomes
+const [nome1, nome2, nome3, nome4, nome5] = nomes
 
 
 
